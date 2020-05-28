@@ -77,12 +77,12 @@ difference(){
 
 mirror([1,0,0]){
 //  Filament visualisation
-    %translate([-35/2,-50,15])rotate([-90,0,0])cylinder(r=1.75/2, h=100, $fn=20);
+    //%translate([-35/2,-50,15])rotate([-90,0,0])cylinder(r=1.75/2, h=100, $fn=20);
 
 // Motor visualisation
-    translate([-42,-42,-1]) %cube([42,42,1]);
-    translate([-21,-21,0])%cylinder(r=2.5, h=20, $fn=30);
-    translate([-21,-21,8])%cylinder(r=4, h=13, $fn=30);
+    //translate([-42,-42,-1]) %cube([42,42,1]);
+    //translate([-21,-21,0])%cylinder(r=2.5, h=20, $fn=30);
+    //translate([-21,-21,8])%cylinder(r=4, h=13, $fn=30);
 
 // MOTOR
 difference(){
@@ -391,9 +391,9 @@ module extruder_nozzle_cooling(){
     }
     
 // Fan screws 
-    translate([35.001,40,3])rotate([0,-90,0])cylinder(r=1.5, h=8, $fn=20);   
+    translate([35.001,40,3])rotate([0,-90,0])cylinder(r=1.35, h=8, $fn=20);
     translate([35.001,40-24,3])rotate([0,-90,0])cylinder(r=1.35, h=8, $fn=20);
-    translate([35.001,40,30-3])rotate([0,-90,0])cylinder(r=1.5, h=8, $fn=20);   
+    translate([35.001,40,30-3])rotate([0,-90,0])cylinder(r=1.35, h=8, $fn=20);
     translate([35.001,40-24,30-3])rotate([0,-90,0])cylinder(r=1.35, h=8, $fn=20);
     
     }

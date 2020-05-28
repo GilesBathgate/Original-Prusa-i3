@@ -131,4 +131,7 @@ difference()
 
 }
 
+difference(){
 ex_body();
+translate([0,-100,-100])cube([100,100,100]);
+}
